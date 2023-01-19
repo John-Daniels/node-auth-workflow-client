@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app {
+  min-height: 100vh;
+}
+
+.app-full {
+  min-height: 100vh;
+}
+
+*::placeholder {
+  color: #474c76 !important;
+}
+
+.links {
+  text-decoration: underline;
+}
