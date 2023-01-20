@@ -4,7 +4,8 @@ import axios from 'axios'
 import { baseURL } from "../constants/index.constant";
 
 const useRequestHook = () => {
-        const token = sessionStorage.getItem('pin-user')
+        const user = JSON.parse(sessionStorage.getItem('pin-user') ?? "{}");
+        const token = user.token
 
         return useCallback(
                 () => {
